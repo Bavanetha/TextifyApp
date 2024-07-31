@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Textify</title>
+    <link rel="stylesheet" href="stylesheet.css">   
+  </head>
+  <body>
+    <h1>Textify</h1>
+    <p>Welcome to TextifyAI! Our app uses advanced AI to provide quick text summaries and generate creative content. Simply input your text or prompt below and click "Submit" to get concise summaries or new text generated effortlessly.
+
+</p>
+    <!-- Navigation for different features -->
+    <nav>
+      <button id="summarize-option" class="nav-button" onclick="showSection('summarize-section')">Summarize Text</button>
+      <button id="Generate_text" class="nav-button" onclick="showSection('Generate_text-section')">Generate Text</button>
+    </nav>
+    <div id="summarize-section" class="section">
+      <div class="container">
+        <div class="text-box">
+          <textarea id="text_to_summarize" name="text_to_summarize" placeholder="Paste in some text to summarize. (Min length is 200 chars. Max length is 100,000 chars.)" maxlength="100000"></textarea>
+          <button id="submit-button" class="submit-button" >
+            <span class="submit-button-text">Summarize</span>
+          </button>
+        </div>
+        <div class="text-box"> 
+        <textarea id="summary" name="summarized_text" placeholder="Summarized text will appear here"> </textarea>
+        </div>
+      </div>
+    </div>
+
+    <!-- Generate Text -->
+      <div id="Generate_text-section" class="section">
+        <div class="container">
+          <div class="text-box">
+            <textarea id="text_to_generate" name="text_to_generate" placeholder="Paste in some text to generate. (Min length is 4 chars. Max length is 100 chars.)" maxlength="100"></textarea>
+            <button id="generate-button" class="submit-button" >
+              <span class="submit-button-text">Generate</span>
+            </button>
+          </div>
+          <div class="text-box"> 
+          <textarea id="generated_text" name="generated_text" placeholder="generated text will appear here"> </textarea>
+          </div>
+        </div>
+      </div>
+    
+    <section class="cta-section">
+      <div class="cta-content">
+        <div class="cta-text">
+        <h2>Curious how to build this app?</h2>
+        <p>Join Postman's Student Program and elevate your software development and API knowledge to help you in your career.</p>
+          <a href="https://www.postman.com/student-program/student-expert/?utm_campaign=CGC&utm_medium=referral&utm_source=internal&utm_term=pbl-skilljar&utm_content=pbl_summariser_app" class="cta-button" target="_blank" rel="noopener nofollow">Register as student</a>
+        </div>
+        <img src="images/learning.png"></img>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
